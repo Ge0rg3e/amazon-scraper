@@ -1,4 +1,4 @@
-import search from '~/scraper/search';
+import { search } from '~/scraper';
 import express from 'express';
 
 const router = express.Router();
