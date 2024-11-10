@@ -1,0 +1,53 @@
+{
+	"name": "amazon-scraper",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Ge0rg3e/amazon-scraper.git"
+	},
+	"author": "Ge0rg3e",
+	"bugs": {
+		"url": "https://github.com/Ge0rg3e/amazon-scraper/issues"
+	},
+	"homepage": "https://github.com/Ge0rg3e/amazon-scraper#readme",
+	"scripts": {
+		"build": "swc src -d dist --source-maps --copy-files",
+		"start": "npm run build && node dist/src/main.js"
+	},
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.21.1",
+		"puppeteer": "^23.7.1"
+	},
+	"devDependencies": {
+		"@swc/cli": "^0.5.0",
+		"@swc/core": "^1.9.1",
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.9.0",
+		"node-config": "^0.0.2",
+		"ts-node": "^10.9.2",
+		"tsc-alias": "^1.8.10",
+		"tsconfig-paths": "^4.2.0",
+		"typescript": "^5.6.3"
+	},
+	"prettier": {
+		"$schema": "http://json.schemastore.org/prettierrc",
+		"endOfLine": "lf",
+		"printWidth": 200,
+		"quoteProps": "as-needed",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": "*.yml",
+				"options": {
+					"tabWidth": 2,
+					"useTabs": false
+				}
+			}
+		]
+	}
+}
